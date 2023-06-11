@@ -10,7 +10,7 @@ job('First-Maven-Project-Via-DSL') {
         maven('clean validate install package', 'maven-samples/single-module/pom.xml')
     }
     publishers {
-        //archive the war file generated
+        //archive the jar file generated
         archiveArtifacts '**/*.jar'
     }
 }
